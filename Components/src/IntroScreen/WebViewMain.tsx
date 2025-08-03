@@ -29,7 +29,9 @@ const WebViewMain = ({
         return (
             <View style={styles.centered}>
                 <ActivityIndicator size={"large"} color={"#000"} />
-                <Text>Checking network status...</Text>
+                <Text style={{
+                    alignSelf: "center"
+                }}>Loading...</Text>
             </View>
         );
     }
@@ -38,7 +40,9 @@ const WebViewMain = ({
         return (
             <View style={styles.centered}>
                 <Text style={styles.offlineText}>You're offline</Text>
-                <Text>Please connect to the internet to view the content</Text>
+                <Text style={{
+                    alignSelf: "center"
+                }}>Please connect to the internet to view the content</Text>
             </View>
         )
     }
