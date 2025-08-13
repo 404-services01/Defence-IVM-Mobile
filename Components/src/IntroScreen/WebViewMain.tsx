@@ -48,13 +48,13 @@ const WebViewMain = ({
     }
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <WebView
             source={{uri: 'https://divm.srv864894.hstgr.cloud/'}}
             startInLoadingState={true}
             style={styles.webview}
             />
-        </View>
+        </SafeAreaView>
     )
 }
 
